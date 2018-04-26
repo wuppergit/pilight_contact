@@ -1,0 +1,175 @@
+﻿{
+
+	"devices": {
+
+		"currentdatetime": {
+
+			"protocol": [ "datetime" ],
+
+			"id": [{
+
+				"longitude": 7.1507,
+
+				"latitude": 51.2562
+
+			}],
+
+			"year": 2018,
+
+			"month": 2,
+
+			"day": 15,
+
+			"hour": 7,
+
+			"minute": 0,
+
+			"second": 38,
+
+			"weekday": 5,
+
+			"dst": 0
+
+		},
+
+		"abwesend": {
+
+			"protocol": [ "generic_switch" ],
+
+			"id": [{
+
+				"id": 999
+
+			}],
+
+			"state": "off"
+
+		},
+
+		"Contact001": {
+
+			"protocol": [ "kaku_contact" ]
+,
+			"id": [{
+
+				"id": 3765248,
+
+				"unit": 1
+
+			}],
+
+			"state": "closed"
+
+		},
+
+		"SwitchA": {
+
+			"protocol": [ "elro_800_switch" ],
+
+			"id": [{
+
+				"systemcode": 12,
+
+				"unitcode": 1
+
+			}],
+
+			"state": "off"
+
+		}
+
+	},
+
+	"rules": {},
+
+	"gui": {
+
+		"currentdatetime": {
+
+			"name": "Datum und Zeit",
+
+			"group": [ "Schalter" ],
+
+			"media": [ "all" ]
+
+		},
+
+		"Contact001": {
+
+			"name": "Türkontakt Terasse UG",
+
+			"group": [ "Schalter" ]
+		},
+
+		"SwitchA": {
+
+			"name": "Switch A",
+
+			"group": [ "Schalter" ]
+
+		}
+	},
+
+	"settings": {
+
+		"log-level": 6,
+
+		"pid-file": "/var/run/pilight.pid",
+
+		"log-file": "/var/log/pilight.log",
+
+		"webserver-enable": 1,
+
+		"webserver-root": "/usr/local/share/pilight/webgui",
+
+		"webserver-http-port": 5001,
+
+		"webserver-https-port": 5002,
+
+		"webserver-cache": 1,
+
+		"gpio-platform": "raspberrypi3"
+	},
+
+	"hardware": {
+
+		"433gpio": {
+
+			"sender": 0,
+
+			"receiver": 6
+
+		}
+
+	},
+
+	"registry": {
+
+		"webserver": {
+
+			"ssl": {
+
+				"certificate": {
+
+					"secure": 0,
+
+					"location": "/etc/pilight/pilight.pem"
+
+				}
+
+			}
+
+		},
+
+		"pilight": {
+
+			"version": {
+
+				"current": "8.0.8"
+
+			}
+
+		}
+
+	}
+}
